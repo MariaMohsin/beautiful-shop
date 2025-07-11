@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Shop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6366f1, #4f46e5);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4f46e5;
+      margin-bottom: 15px;
+    }
+
+    .add-button {
+      background: #4f46e5;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .add-button:hover {
+      background: #4338ca;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🛒 Beautiful Shop by {{name}}</header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606813902913-7d5ce839e4c1?auto=format&fit=crop&w=600&q=80" alt="Running Shoes" />
+      <div class="card-body">
+        <div class="product-title">Running Shoes</div>
+        <div class="product-description">Perfect for gym or jogging.</div>
+        <div class="product-price">$59.99</div>
+        <a href="#" class="add-button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Smart Watch" />
+      <div class="card-body">
+        <div class="product-title">Smart Watch</div>
+        <div class="product-description">Track your health in style.</div>
+        <div class="product-price">$89.00</div>
+        <a href="#" class="add-button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618354691257-a77a42a0e7ff?auto=format&fit=crop&w=600&q=80" alt="Backpack" />
+      <div class="card-body">
+        <div class="product-title">Leather Backpack</div>
+        <div class="product-description">Ideal for work and travel.</div>
+        <div class="product-price">$120.49</div>
+        <a href="#" class="add-button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1580894908360-8fd2cf0cbb49?auto=format&fit=crop&w=600&q=80" alt="Headphones" />
+      <div class="card-body">
+        <div class="product-title">Wireless Headphones</div>
+        <div class="product-description">Noise canceling with long battery life.</div>
+        <div class="product-price">$45.99</div>
+        <a href="#" class="add-button">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
